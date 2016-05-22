@@ -1,24 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,900);
 @import 'reset';
-
 body {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
 }
-
 main {
-    
     .logo {
         position: fixed;
         left: 50%;
-        background: white url(../assets/logo.png);
-        background-size: contain;    
+        background: white url("../assets/logo.png");
+        background-size: contain;
         width: 100px;
         height: 120px;
-        box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
-        
+        box-shadow: 0 0 2px rgba(0,0,0,0.5);
     }
-    
     .controller {
         display: flex;
         flex-direction: column;
@@ -28,7 +23,6 @@ main {
         top: 50%;
         right: 30px;
         justify-content: space-between;
-        
         span.circle {
             cursor: pointer;
             width: 15px;
@@ -39,22 +33,18 @@ main {
                 background: lighten(lightgray, 20%);
             }
             &:focus {
-                box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+                box-shadow: 0 0 5px rgba(0,0,0,0.5);
             }
-            
         }
     }
-    
     .scroll {
         color: white;
         position: fixed;
         bottom: 0;
         left: 50%;
-        background: rgba(0,0,0,0.5);
-        padding: 30px;
+        padding: 10px 30px;
         font-size: 1.5em;
     }
-    
     .slide {
         height: 100vh;
         width: 100%;
@@ -62,42 +52,41 @@ main {
         align-items: center;
         color: white;
         &-1 {
-            background: url(../assets/main.jpg);
+            background: url("../assets/take-action.jpg");
             background-size: cover;
-            
         }
-        
         &-2 {
-            background: url(../assets/climate.jpg);
+            background: url("../assets/climate.jpg");
             background-size: cover;
-            
         }
         &-3 {
-            background: url(../assets/food.jpg);
+            background: url("../assets/food.jpg");
             background-size: cover;
         }
         &-4 {
-            background: url(../assets/forests.jpg);
+            background: url("../assets/forests.jpg");
             background-size: cover;
         }
         &-5 {
-            background: url(../assets/fresh_water.jpg);
+            background: url("../assets/fresh_water.jpg");
             background-size: cover;
         }
         &-6 {
-            background: url(../assets/oceans.jpg);
+            background: url("../assets/oceans.jpg");
             background-size: cover;
         }
         &-7 {
-            background: url(../assets/wildlife.jpg);
+            background: url("../assets/wildlife.jpg");
             background-size: cover;
         }
         &-8 {
-            background: url(../assets/take-action.jpg);
+            background: url("../assets/main.jpg");
             background-size: cover;
+            justify-content: center !important;
+            text-align: center;
         }
-
-
+        
+        input {}
         
         .main-text {
             width: 50%;
@@ -112,16 +101,12 @@ main {
                 font-size: 1.2em;
                 line-height: 1.5em;
             }
-
         }
-        
-        &:nth-child(even){
+        &:nth-child(odd) {
             justify-content: flex-end;
             .main-text {
                 text-align: right;
             }
         }
     }
-    
-    
 }
