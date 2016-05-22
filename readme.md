@@ -35,6 +35,7 @@ Build it! Feel free to use frameworks like Bootstrap or Foundation.
 - Atom as a Text Editor
 - Git as Versioning Control
 - Chrome as a main Browser, but alto tested on Safari and Firefox
+- A little bit of Boostrap to build the Buttons.
 
 ## Non-Profit Organization
 I've choosen **WWF** as my Non-Profit Organization
