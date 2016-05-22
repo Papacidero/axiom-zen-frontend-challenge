@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px; }
+
+main .logo {
+  position: fixed;
+  left: 50%;
+  background: white url(../assets/logo.png);
+  background-size: contain;
+  width: 100px;
+  height: 120px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); }
+main .controller {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  width: 15px;
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  justify-content: space-between; }
+  main .controller span.circle {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 100%; }
+    main .controller span.circle:hover {
+      background: white; }
+    main .controller span.circle:focus {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
+main .scroll {
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  font-size: 1.5em; }
+main .slide {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white; }
+  main .slide-1 {
+    background: url(../assets/main.jpg);
+    background-size: cover; }
+  main .slide-2 {
+    background: url(../assets/climate.jpg);
+    background-size: cover; }
+  main .slide-3 {
+    background: url(../assets/food.jpg);
+    background-size: cover; }
+  main .slide-4 {
+    background: url(../assets/forests.jpg);
+    background-size: cover; }
+  main .slide-5 {
+    background: url(../assets/fresh_water.jpg);
+    background-size: cover; }
+  main .slide-6 {
+    background: url(../assets/oceans.jpg);
+    background-size: cover; }
+  main .slide-7 {
+    background: url(../assets/wildlife.jpg);
+    background-size: cover; }
+  main .slide-8 {
+    background: url(../assets/take-action.jpg);
+    background-size: cover; }
+  main .slide .main-text {
+    width: 50%;
+    padding: 50px 100px;
+    background: rgba(0, 0, 0, 0.5); }
+    main .slide .main-text h2 {
+      font-size: 3em;
+      text-transform: uppercase;
+      margin-bottom: 15px; }
+    main .slide .main-text p {
+      font-size: 1.2em;
+      line-height: 1.5em; }
+  main .slide:nth-child(even) {
+    justify-content: flex-end; }
+    main .slide:nth-child(even) .main-text {
+      text-align: right; }
+
+/*# sourceMappingURL=style.css.map */
