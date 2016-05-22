@@ -16,23 +16,8 @@ $(document).ready(function () {
         });
     };
     
+    // Restart Scroll Position on Page Reload
     scrollToSlide(1);
-
-    // $('body').on('keydown', function (e) {
-    //     if (actualSLide > 1 && e.keyCode == 38) {
-    //         scrollToSlide(actualSLide - 1);
-    //     }
-    //     if (actualSLide < 8 && e.keyCode == 40) {
-    //         scrollToSlide(actualSLide + 1);
-    //     }
-    // });
-    
-    
-    $('.scroll').on('click', (e)=> {
-        if (actualSLide < 8) {
-            scrollToSlide(actualSLide + 1);
-        }
-    })
 
     $('.circle').on('click', (e) => {
         var targetSlide = e.target.dataset.index;

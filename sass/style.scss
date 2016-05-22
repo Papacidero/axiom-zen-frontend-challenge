@@ -57,6 +57,7 @@ main {
             transition: all 0.3s linear;
             position: relative;
             color: white;
+            padding: 0 5px;
             &:after {
                 content: '';
                 margin-left: 5px;
@@ -69,16 +70,7 @@ main {
                 width: 10px;
                 height: 10px;
             }
-            span {
-                color: white;
-                position: absolute;
-                right: 20px;
-                font-size: 0.8em;
-                top: -3px;
-                width: 200px;
-                text-align: right;
-                
-            }
+        
             &:hover {
                 background: rgba(0,0,0,0.3);
                 &:after {
@@ -90,6 +82,7 @@ main {
             }
             
             &.selected {
+                background: rgba(0,0,0,0.3);
                 &:after {
                     background: #33a7db;
                 }
@@ -176,14 +169,6 @@ main {
                 overflow-y: scroll;
                 padding-right: 15px;
                 position: relative;
-                &:after {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    height: 25px;
-                    background: rgba(255, 255, 255, 0.5);
-                }
                 
                 &::-webkit-scrollbar {
                     -webkit-appearance: none;
